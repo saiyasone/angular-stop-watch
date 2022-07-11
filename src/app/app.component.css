@@ -1,3 +1,47 @@
 p {
   font-family: Lato;
 }
+.m-2 {
+  margin: 0 10px;
+}
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sw-container {
+  background-color: #6288df;
+  padding: 15px 20px;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 3px 6px rgba(129, 129, 129, 0.16),
+    0 3px6px rgba(105, 105, 105, 0.23);
+}
+
+.sw-container .stopwatch {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.button-container button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  color: #6288df;
+}
+.button-container button:hover {
+  background-color: #c9d3eb;
+}
+
+.button-container button.btn-play-pause {
+  margin-right: 10px;
+}

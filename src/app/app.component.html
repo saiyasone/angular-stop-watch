@@ -1,4 +1,22 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div class="sw-container">
+  <div class="stopwatch">
+    <span> {{ hour }} : </span>
+    <span> {{ min }} : </span>
+    <span> {{ sec }} : </span>
+    <span>{{ ms }}</span>
+  </div>
+
+  <div class="button-container">
+    <button (click)="play()" class="btn-play-pause">
+      <ng-container *ngIf="!isPlay">
+        <i class="fas fa-play"></i>
+      </ng-container>
+      <ng-container *ngIf="isPlay">
+        <i class="fas fa-pause"></i>
+      </ng-container>
+    </button>
+    <button (click)="reset()" class="btn-reset">
+      <i class="fas fa-rotate-left"></i>
+    </button>
+  </div>
+</div>
